@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD/XHTML 1.0 Strict//EN" "DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <title>Kontaktformular</title>
+  </head>
+  <body>
+    <h2>Kontakt: </h2>
+    <form action="http://form.bot-on-line.com/" method="post">
+      <table>
+        <tr>
+          <td>Anrede</td>
+          <td>
+            <select name="anrede" size="1">
+              <option value="1">Herr</option>
+              <option value="2">Frau</option>
+            </select>
+          </td>
+        </tr>
+        <tr>
+          <td>Name</td>
+          <td><input type="text" name="nachname" /></td>
+        </tr>
+        <tr>
+          <td>Vorname</td>
+          <td><input type="text" name="vorname" /></td>
+        </tr>
+        <tr>
+          <td>E-Mail Adresse</td>
+          <td><input type="text" name="email" /></td>
+        </tr>
+        <tr>
+          <td>Telefon</td>
+          <td><input type="text" name="telefon" /></td>
+        </tr>
+        <tr>
+          <td>Hobbys</td>
+          <td>
+            <select name="hobbys[]" size="5" multiple="multiple">
+              <option value="1">Computer</option>
+              <option value="2">Fahrrad</option>
+	      <option value="3">Tischtennis</option>
+	      <option value="4">Fussball</option>
+	      <option value="5">Inlineskating</option>
+	      <option value="6">Kraftsport</option>
+	      <option value="7">Modellbau</option>
+            </select>
+          </td>
+        </tr>
+        <tr>
+          <td>zusätzliche Wünsche</td>
+          <td>
+	    <ul>
+	      <li><input type="checkbox" name="addWish" value="news" />Newsletter beantragen</li>
+	      <li><input type="checkbox" name="addWish" value="mail" />Maillinglist beitreten</li>
+	      <li><input type="checkbox" name="addWish" value="advertising" />Prospekte anfordern</li>
+	    </ul>
+	  </td>
+        </tr>
+        <tr>
+          <td>Kommentar</td>
+          <td><textarea name="kommentar" cols="50" rows="10">Fülle mich :-)</textarea></td>
+        </tr>
+        <tr>
+          <td><input type="submit" name="send" value="Schick's weg" /></td>
+          <td><input type="reset" name="reset" value="Leeren" /></td>
+        </tr>
+      </table>
+    </form>
+  </body>
+</html>
